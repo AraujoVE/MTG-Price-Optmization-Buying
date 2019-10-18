@@ -1,0 +1,111 @@
+@-webkit-keyframes maintitleAnimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes maintitleAnimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes maintitleAnimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.mainPageTitleBlock {
+    border-radius: 20px;
+    background: linear-gradient(92deg, #006bff, #000000, #ff0000, #00a306, #ffffff);
+    background-size: 400% 400%;
+    -webkit-animation: maintitleAnimation 30s ease infinite;
+    -moz-animation: maintitleAnimation 30s ease infinite;
+    animation: maintitleAnimation 30s ease infinite;
+}
+
+.mainPageTitle {
+    font-weight: bold;
+    font-size: 50px;
+    color: #ffffff;
+}
+
+.formInsertCards {
+    background: #ffffffe3;
+    border-radius: 10px;
+}
+
+.insertCardButton {
+    border: 3px solid rgb(0, 0, 0);
+    background: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+     outline: none;   
+    color: rgb(0, 0, 0);
+}
+
+.insertCardButton:hover {
+    transition-duration: 0.3s;
+    border: 3px solid rgb(0, 255, 221);
+    color: rgb(0, 255, 221);
+}
+
+.group {
+  position: relative;
+  margin: 45px 0;
+}
+
+textarea {
+  resize: none;
+}
+
+input {
+  background: none;
+  color: #c6c6c6;
+  font-size: 22px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 320px;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #c6c6c6;
+}
+input:focus {
+  outline: none;
+}
+
+input:focus ~ label, input:valid ~ label {
+  top: -14px;
+  font-size: 16px;
+  color: rgb(3, 3, 3);
+}
+
+input:focus ~ .bar:before {
+  width: 320px;
+}
+
+label {
+  color: #c6c6c6;
+  font-size: 16px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 300ms ease all;
+}
+
+.bar {
+  position: relative;
+  display: block;
+  width: 320px;
+}
+.bar:before {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: 0px;
+  position: absolute;
+  background: rgb(0, 255, 221);
+  transition: 300ms ease all;
+  left: 0%;
+}

@@ -216,3 +216,20 @@ def GeneralListFunction(websiteurl,sitetype):
 webpage=input("Insira abaixo o endereço virtual do seu deck no site 'Ligamagic'\n")
 
 All=(GeneralListFunction(webpage,0))
+
+# Developed in discord, waiting for new features coming in future commit from @E3-7
+
+# Code working, but variables aren't present in this commit
+
+'''
+    # Pegar frete de um site (URL conhecido)
+    url = 'https://www.xplace.com.br'
+    caminhoBase1 = '/ajax/ecom/frete.php?id='
+    cardSpecificID = '32035' #from button (not cardID)
+    caminhoBase2 = '&cep=12215518&vTotal=10000&idEnd=-1'
+
+    req = Request(url + caminhoBase1 + cardSpecificID + caminhoBase2, headers={'User-Agent': 'Mozilla/5.0'})
+    page = urlopen(req).read().decode('utf-8')
+
+    print (page)
+'''
